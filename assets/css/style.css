@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+}
+p{
+    color: #666;
+    font-size: 14px;
+}
+h3 {
+    font-size: 36px;
+    color: #000000;
+    line-height: 50px;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+span {
+    display: block;
+    font-size: 14px;
+    color: #6d6d6d;
+}
+ul{
+    list-style-type: none;
+}
+.bg{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    
+}
+/* =========== button css ==============*/
+.box-btn, .box-btn2{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    background-color: #85af4b;
+    border-radius: 25px;
+    transition: .3s;
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+}
+.box-btn2{
+    text-transform: capitalize;
+    border:2px solid #fff;
+    background-color: transparent;
+}
+.box-btn:hover{
+    background-color: #333;
+    color: #fff;
+}
+.box-btn2:hover{
+    background-color: #85af4b;
+    border-color: #85af4b;
+    color: #fff;
+
+}
+.section-title{
+    margin-bottom: 50px;
+}
+
+/* =========== header-top css ==============*/
+.header-top{
+    background-color: #1A68CA;
+    padding: 20px 0;
+    
+}
+.header-top a{
+    color: #fff !important;
+}
+.header-top i{
+    margin: 8px;
+    color: #fff !important;
+    transition: .3s;
+}
+
+/* =========== header css ==============*/
+.mainmenu li{
+    margin-left: 20px;
+}
+.header-area .mainmenu li a, i{
+    color: #333 !important;
+    font-weight: 600;
+    transition: .3s;
+}
+.header-area .mainmenu li:hover a{
+    color: #1A68CA !important;
+}
+.banner-area{
+    height: 70vh;
+    color: #fff;
+}
+.banner-content h1{
+    font-size: 72px;
+    font-weight: 800;
+    
+}
+.banner-content p{
+    padding: 20px 0;
+    color: #fff !important
+}
+/* =========== history-area css ==============*/
+.history-area {
+    padding: 100px 0;
+}
+
+.history-area h3 {
+    position: relative;
+}
+.history-area h3::before {
+    position: absolute;
+    content: "";
+    top: -25px;
+    right: 0;
+    width: 2px;
+    height: 160%;
+    background-color: #1A68CA;
+}
+.history-area p{
+    margin-left: 30px;
+}
+.single-feature {
+    margin-top: 80px;
+}
+.single-feature img{
+    width: 35px;
+    height: 35px;
+}
+.single-feature h4{
+    font-size: 21px;
+    margin: 15px 0;
+}
+
+/*  =========== about-area css ============ */
+.about-area{
+    padding: 70px 0;
+}
+.about-area a{
+    display: inline-block;
+    padding: 10px 35px;
+    background-color: #e6e6e6;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1A68CA;
+}
+/* =========== counter-area css ==============*/
+.counter-area{
+    padding: 100px 0;
+    text-align: center;
+}
+.counter-area h4, span{
+    color: #000;
+    font-size: 48px;
+    display: inline-block;
+    font-weight: 500;
+}
+.counter-area p{
+    font-size: 14px;
+    text-transform: capitalize;
+}
+/* =========== fqa-area css ==============*/
+.fqa-area {
+    padding: 80px 0;
+    
+}
+.fqa-area h4{
+    font-size: 36px;
+    line-height: 28px;
+    margin-bottom: 50px;
+    
+}
+.fqa-area .fqa-about img{
+    width: 180px;
+    height: auto;
+    
+}
+.fqa-area .fqa-about .fqa-author img{
+    width: 100px;
+    height: 100px;
+    
+}
+.fqa-area .fqa-about .fqa-author h5{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+
+}
+.fqa-area .fqa-about .fqa-author span{
+    font-size: 12px;
+    margin-top: 10px;
+
+}
+/* =========== cta-area css ==============*/
+.cta-area{
+    height: 40vh;
+}
+section.cta-area p {
+    margin-bottom: 30px;
+}
+
+section.cta-area h4 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* =========== project-area css ==============*/
+.single-project{
+    position: relative;
+}
+.single-project:hover .project-content{
+    visibility: visible;
+    opacity: 1;
+}
+.project-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.project-content:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: 0.8;
+    z-index: -1;
+}
+.project-content i {
+    color: #fff !important;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    
+}
+.project-content i:hover {
+    background-color: #1A68CA;
+    border: 1px solid #1A68CA;
+    border-radius: 50%;
+    
+}
+/* =========== testimonial-area css ==============*/
+.testimonial-area{
+    padding: 110px 0;
+}
+.single-testimonial p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #ccc;
+    font-size: 16px;
+    line-height: 34px;
+    margin-bottom: 90px;
+    font-style: italic;
+}
+.single-testimonial img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+.slick-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+}
+.slick-dots li{
+        display: inline-block;
+        margin: 0 5px;
+}
+
+.testimonials .slick-dots li.slick-active button {
+    background-color: #1A68CA;
+}
+.testimonials .slick-dots li button {
+    text-indent: -999px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0b3066;
+    border: 0;
+    margin: 0 5px;
+}
+/* =========== team-area css ==============*/
+.team-area{
+    margin: 80px 0;
+}
+.single-team {
+    margin: 30px 0;
+}
+.single-team h4{
+    margin: 30px 0;
+    font-size: 18px;
+}
+.single-team span{
+    margin: 15px 0;
+    font-size: 14px;
+    display: block;
+    
+}
+.single-team a i{
+    margin-right: 15px;
+    color: #6d6d6d !important;
+    transition: .3s;
+}
+.single-team a:hover i{
+    color: #333 !important;
+}
+
+/* =========== header-top css ==============*/
+.client-area{
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+.clients img{
+    width: auto !important;
+    display: inline-block;
+}
+
+/* footer css */
+.footer-top-area {
+    background-color: #02295a;
+    padding: 90px 0;
+    color: #fff;
+}
+.footer-top-area h4{
+    margin-bottom: 30px;
+}
+.single-footer p{
+    color: #bbb;
+}
+.footer-social a i {
+    color: #fff !important;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #85af4b;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 12px;
+    transition: .3s;
+}
+.footer-social a i:hover {
+    background-color: #333;
+    
+}
+.footer-menu ul {
+    padding-left: 10px;
+    
+}
+.footer-menu ul li{
+    margin-bottom: 12px !important;
+}
+.footer-menu ul li a{
+    margin-bottom: 12px !important;
+    color: #bbb !important;
+    transition: .3s;
+}
+.footer-menu ul li a:hover {
+    color: #f8f8f8 !important;
+}
+.footer-news {
+    display: flex;
+}
+
+.footer-news img {
+    width: 150px;
+    margin-right: 22px;
+}
+
+.footer-news a {
+    color: #bbb;
+}
+
+.footer-news {
+    margin-bottom: 20px;
+}
+.footer-subs p {
+    color: #bbb;
+}
+
+.footer-subs input {
+    display: block;
+    margin-bottom: 12px;
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+    border: 0;
+    color: #fff;
+    background-color: #003f8d;
+}
+.footer-subs input[type="submit"] {
+    background-color: #85af4b;
+    width: 100%;
+    border: 0;
+    padding: 20px 0;
+    margin-top: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* footer-bottom css */
+.footer-bottom{
+    background-color: #003f8d;
+    padding: 30px 0;
+}
+.footer-bottom p{
+    color: #fff !important;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.footer-bottom p i{
+    color: #85af4b !important;
+
+}
+.footer-bottom a{
+    display: inline-block;
+    margin-right: 15px;
+    color: #fff;
+    transition: .3s;
+}
+.footer-bottom a:hover{
+    color: #bbb;
+}
+
+/* about page css */
+
+/* ========= breadcrumb-area css ========= */
+.breadcrumb-area{
+    padding: 150px 0;
+    text-align: center;
+    background-position: top center !important;
+    color: #fff;
+}
+
+.breadcrumb-area::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #1A68CA;
+    opacity: .75;
+    z-index: -2;
+}
+.breadcrumb-area h4 {
+    font-size: 72px;
+}
+
+.breadcrumb-area ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.breadcrumb-area ul li{
+    margin-right: 12px;
+    text-transform: capitalize;
+}
+
+.about-video {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding-top: 340px;
+    z-index: 2;
+}
+
+.about-video::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #003f8d;
+    opacity: .75;
+}
+
+.about-video a {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(50%, 50%);
+    color: #fff !important;
+}
+.about-video i {
+    color: #fff !important;
+    font-size: 22px;
+}
+
+/* project page css */
+.project-menu {
+    padding: 22px 0;
+}
+.project-menu li{
+    margin-right: 18px;
+}
+
+/* blog page css */
+.blog-area{
+    padding: 80px 0;
+}
+.blog-img {
+    background-size: cover;
+    background-position: center;
+    padding-top: 60%;
+}
+
+.single-blog h4 {
+    padding: 30px 0;
+    margin: 12px;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.blog-meta {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    margin: 36px 0;
+    border: 1px solid #bbb;
+}
+
+.blog-meta-left a {
+    margin-right: 14px;
+    color: #999;
+}
+
+.blog-meta-left a i {
+    margin-right: 12px;
+    color: #095dc7!important;
+}
+
+.blog-btn a, i {
+    color: #999 !important;
+}
+.single-sidebar{
+    margin-bottom: 50px;
+}
+.single-sidebar h4{
+    position: relative;
+    margin-bottom: 36px;
+}
+.single-sidebar h4::before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #003f8d;
+}
+.single-sidebar form {
+    position: relative;
+}
+.single-sidebar input[type="email"] {
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eee;
+}
+.single-sidebar button{
+    position: absolute;
+    right: 20px;
+    top: 56%;
+    border: 0;
+    background: transparent;
+}
+
+.single-sidebar .blog-list a {
+    color: #666 !important;
+    transition: .3s;
+    
+}
+.single-sidebar .blog-list a:hover {
+    color: #003f8d !important;
+    
+}
+.single-sidebar .blog-list a i {
+    color: #003f8d !important;
+    margin-right: 12px;
+}
+.single-sidebar .advertise img{
+    max-width: 300px;
+    height: auto;
+}
+.single-sidebar .gellary-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+/* contact page css */
+.contact-us{
+    padding: 100px 0;
+}
+.single-contact i{
+    font-size: 32px;
+    color: #003f8d !important;
+    margin: 30px 0;
+}
+.single-contact h5{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.single-contact p{
+    max-width: 280px;
+    margin: 0 auto 50px;
+}
+
+/* contact page css */
+.contact-form-area{
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f8fafc;
+}
+.contact-form input, textarea {
+    padding: 20px;
+    border: 0;
+}
+.contact-form textarea {
+    padding: 20px;border: 0;
+}
+.contact-form button {
+    border: 0;
+    background-color: #1A68CA;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 50px;
+}
+
+/* responsive css */
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .history-area{
+        font-size: 30px;
+    }
+    .history-area, .about-area span {
+        font-size: 30px;
+    }
+    .about-area span {
+        font-size: 36px;
+    }
+    
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* .bannar-area {
+        padding: 60px 0;
+    }
+    .bannar-area h1 {
+        font-size: 44px;
+    } */
+    .history-area h3::before {
+        display: none;
+    }
+    
+}
