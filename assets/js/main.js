@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // Magnific Popup Active
-  $(".project-popup").magnificPopup({
+  $(".popup-image").magnificPopup({
     type: "image",
     gallery: {
       enabled: true,
@@ -31,14 +31,22 @@ $(document).ready(function () {
     slidesToScroll: 1,
   });
 
-});
+  // Projects Filter
 
-// sticky menu
-$(window).on('scroll', function () {
-  if ($(this).scrollTop() > 20) {
-    $('.header-area').addClass('sticky');
-  } else {
-    $('.header-area').removeClass('sticky');
-  }
+  // init Isotope
+  var $grid = $('.project-items').isotope({
+    // options
+  });
+  // filter items on button click
+  $('.projects-menu').on('click', 'li', function () {
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+  });
+
+  $('.projects-menu').on('click', 'li', function () {
+    $(this).siblings(".active").removeClass('active');
+    $(this).addClass("active");
+  })
+
 });
 

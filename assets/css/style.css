@@ -216,6 +216,7 @@ section.cta-area h4 {
 /* =========== project-area css ==============*/
 .single-project{
     position: relative;
+    margin-bottom: 15px;
 }
 .single-project:hover .project-content{
     visibility: visible;
@@ -517,11 +518,15 @@ section.cta-area h4 {
 }
 
 /* project page css */
-.project-menu {
-    padding: 22px 0;
+.projects-menu {
+    list-style: none;
+    margin-bottom: 45px;
 }
-.project-menu li{
-    margin-right: 18px;
+.projects-menu li{
+    cursor: pointer;
+}
+.projects-menu li.active{
+    color: #095dc7;
 }
 
 /* blog page css */
