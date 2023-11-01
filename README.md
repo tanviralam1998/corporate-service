@@ -1,2 +1,2 @@
 # corporate-service
-live preview
+live preview: https://tanviralam1998.github.io/corporate-service/
